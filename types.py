@@ -9,7 +9,7 @@ print(a)
 v = int(input('Введите число от 1 до 10: '))
 print(v+10)
 
-name = str(input('Введите Ваше имя: '))
-a = f'Привет, {name}! Как дела?'
+name2 = str(input('Введите Ваше имя: '))
+a = f'Привет, {name2}! Как дела?'
 print(a)
 
