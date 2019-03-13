@@ -3,13 +3,13 @@
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 for name in names:
-    print(''.join(list(map(str, name))))
+    print(name)
 
 # Задание 2
 # Необходимо вывести имена всех учеников из списка, рядом с именем показать количество букв в нём.
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 for name in names:
-    print(''.join(list(map(str, name))), len(name))
+    print(name, len(name))
 
 
 # Задание 3
@@ -21,12 +21,13 @@ is_male = {
   'Маша': False,
 }
 
-for name, gender in is_male.items():
-    if gender is True:
-        print(''.join(list(map(str, name))), "Мужской")
+for name, is_male in is_male.items():
+    male = "Мужской"
+    female = "Женский"
+    if is_male:
+        print(name, male)
     else:
-        print(''.join(list(map(str, name))), "Женский")
-
+        print(name, female)
 
 # Задание 4
 # Даны группы учеников. Нужно вывести количество групп и для каждой группы – количество учеников в ней
